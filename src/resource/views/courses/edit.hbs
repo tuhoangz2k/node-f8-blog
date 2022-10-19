@@ -1,0 +1,43 @@
+<div class='mt-4'>
+    <h3>Post course</h3>
+    <form method='POST' action='/course/{{course._id}}?_method=PUT'>
+        <div class='form-group'>
+            <label for='description'>Description</label>
+            <textarea
+                class='form-control'
+                id='descriptiopn'
+                aria-describedby='emailHelp'
+                placeholder='Enter email'
+                name='description'
+            >{{course.description}}</textarea>
+        </div>
+
+        <div class='form-group'>
+            <label for='name'>Course's name</label>
+            <input
+                value='{{course.name}}'
+                type='text'
+                class='form-control'
+                id='name'
+                aria-describedby='emailHelp'
+                placeholder='Enter email'
+                name='name'
+            />
+        </div>
+
+        <div class='form-group'>
+            <label for='videoID'>video ID</label>
+            <input
+                value='{{course.videoID}}'
+                type='text'
+                class='form-control'
+                id='videoID'
+                aria-describedby='emailHelp'
+                placeholder='Enter email'
+                name='videoID'
+            />
+        </div>
+
+        <button type='submit' class='btn btn-primary'>Edit Course</button>
+    </form>
+</div>
